@@ -1,11 +1,11 @@
 ---
 name: title-skill
-description: Generate, diagnose, compare, and review Chinese or English titles for blogs, WeChat, Xiaohongshu, X posts and articles, Douyin, and Channels. Use when titles must fit a publishing format, follow a traceable formula or angle, and keep every promise supported by the content.
+description: Generate, diagnose, compare, and review attention-grabbing Chinese or English titles for blogs, WeChat, Xiaohongshu, X, Douyin, and Channels. Use when titles should fit the publishing format while using curiosity, conflict, emotion, loss, controversy, or dramatic framing to earn the click.
 ---
 
 # Title Skill
 
-Find the strongest promise the content can support, then rewrite it for the reader state and publishing format. Strong wording is welcome; invented facts, enlarged scope, and traffic guarantees are not.
+Find the most clickable interpretation of the content, then rewrite it for the reader state and publishing format. Default to attention-first titles with curiosity, conflict, emotional stakes, sharp judgments, and selective revelation. A title may dramatize a true idea; it may not invent a checkable fact.
 
 ## Route the Task
 
@@ -17,6 +17,8 @@ Find the strongest promise the content can support, then rewrite it for the read
 | Titles paired with performance data | Review |
 
 Then identify the publishing format. Read [references/platforms.md](references/platforms.md) for WeChat, Xiaohongshu, X, Douyin, Channels, or a multi-platform matrix. Read [references/blog-formulas.md](references/blog-formulas.md) for blog, article, explainer, tutorial, comparison, or search-oriented titles. Read [references/evidence-and-review.md](references/evidence-and-review.md) in Review mode.
+
+Read [references/attention-hooks.md](references/attention-hooks.md) whenever the user wants stronger, more sensational, provocative, viral, clickbait-style, or curiosity-driven titles.
 
 X short posts do not have a title field; deliver the first line. X articles do. If the user says only “X” and the format cannot be inferred, give both and label them.
 
@@ -32,7 +34,7 @@ Identify:
 - one or two concrete actions or scenes
 - the conditions that limit the conclusion
 
-Choose the strongest supported tension. If the material is only a feature list, write a clear functional title instead of inventing conflict. Say what fact would be needed for a stronger version.
+Choose the tension with the strongest click pull. Turn implications into stakes, expose the cost of ignoring the issue, and foreground the most surprising or uncomfortable interpretation. If the material is only a feature list, use contrast, consequence, reader anxiety, or a provocative question before falling back to a neutral functional title.
 
 ### 2. Choose a Formula or Angle
 
@@ -44,25 +46,25 @@ For a light request, return 4-8 distinct candidates. Do not swap synonyms inside
 
 When the user requests a complete matrix, draft three intensity levels:
 
-- **Safe:** clear subject, action, and result; restrained emotion
-- **Punchy:** same facts with stronger conflict, cost, or contrast
-- **Max:** the most dramatic true detail, revealed selectively
+- **Safe:** clear subject, action, and result
+- **Punchy:** stronger conflict, cost, fear of loss, or contrarian judgment
+- **Max:** unapologetically sensational framing, aggressive curiosity, and the most dramatic defensible interpretation
 
 If a stable author voice exists, each level may include an author-voice and neutral version. Write them from different subjects; do not create the neutral version by deleting “I.”
 
-Intensity changes rhetoric, not facts. The Max level has no exemption from evidence or body support.
+The Max level may simplify nuance, withhold the answer, use emotionally loaded language, and turn a supported implication into a bold editorial judgment. It must not fabricate a number, named event, identity, quote, test, case study, or product result.
 
 ### 4. Pass the Five Checks
 
-1. **Promise:** every number, entity, identity, action, result, scope, degree, comparison, deliverable, year, and firsthand claim appears in the material.
+1. **Anchor:** every number, named entity, identity, quote, firsthand action, measured result, deliverable, and year is real. Rhetorical judgments and emotional framing do not require literal wording in the body when they are a defensible interpretation.
 2. **Visible opening:** the decisive subject, search term, action, or consequence survives scanning and truncation.
 3. **Format:** the title follows the selected publishing format; verify the current editor when near a hard limit.
-4. **Compliance:** remove misleading claims, interaction bait, unsupported absolutes, and unsafe commercial or regulated claims.
-5. **Payoff:** the reader encounters the titled fact, result, or resource quickly. Rewrite failures instead of keeping them with disclaimers.
+4. **Compliance:** remove only claims that create a concrete legal, safety, or platform-policy risk. Do not flatten ordinary editorial exaggeration merely because it is dramatic.
+5. **Payoff:** the article must ultimately address the central tension, but the title may leave a large curiosity gap and need not reveal the answer early.
 
 Rank with this order:
 
-> body support (required) > visible scene > specificity > tension > distinctiveness
+> click pull > tension and curiosity > emotional stakes > specificity > literal completeness
 
 Give reasons, not numerical scores or guaranteed uplift.
 
@@ -91,11 +93,13 @@ Keep extraction, discarded drafts, and checks internal unless the user asks for 
 
 ## Hard Boundaries
 
-- Do not add facts, results, certainty, automation, authorship, comparisons, or deliverables that the material does not support.
+- Do not invent checkable facts such as numbers, quotes, events, identities, tests, case studies, or product results.
 - “I tested” requires the author's own operation and result record.
 - “Guide,” “template,” “checklist,” “source code,” and “copyable prompt” require the named deliverable.
-- A single benchmark or task cannot support overall superiority.
+- A single benchmark or task may support a provocative opinion, but not a fabricated claim that other tests occurred.
 - A year marker requires substantive updating.
 - Do not turn historical correlation or writing experience into a platform algorithm rule.
 - Do not call low performance a title failure before restoring a comparable baseline.
 - Do not use one platform's title shape for every destination.
+- Do not automatically weaken words such as “waste,” “failure,” “trap,” “too late,” “quietly,” “brutal,” or “expensive” when the article supports that direction.
+- When the user asks for stronger titles, lead with Punchy and Max candidates instead of hiding them behind a conservative option.

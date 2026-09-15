@@ -8,7 +8,8 @@ A reusable Chinese title strategy skill for generating, diagnosing, comparing, a
 - adapts that promise to each publishing format instead of shortening one master title
 - keeps the original blog and search-title formulas
 - offers Safe, Punchy, and Max intensity levels when a matrix is requested
-- checks numbers, years, results, comparisons, and deliverables against the body
+- defaults to attention-first hooks, provocative framing, curiosity gaps, and controlled clickbait
+- keeps checkable numbers, years, results, comparisons, and deliverables real
 - reviews historical title data without turning correlation into causation
 
 ## Install
