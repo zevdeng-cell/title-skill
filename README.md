@@ -1,26 +1,22 @@
-# High-traffic blog title formulas
+# Title Skill
 
-A reusable agent skill for writing blog/article titles using patterns common in publicly popular, high-signal posts.
+A reusable Chinese title strategy skill for generating, diagnosing, comparing, and reviewing titles across blogs, WeChat, Xiaohongshu, X, Douyin, and Channels.
+
+## What it does
+
+- extracts one supportable promise from the content
+- adapts that promise to each publishing format instead of shortening one master title
+- keeps the original blog and search-title formulas
+- offers Safe, Punchy, and Max intensity levels when a matrix is requested
+- checks numbers, years, results, comparisons, and deliverables against the body
+- reviews historical title data without turning correlation into causation
 
 ## Install
 
-Copy `high-traffic-blog-title-formulas/SKILL.md` into your agent's skills/workflows folder, or paste the recipe into Cursor as a skill.
+Copy the complete `title-skill/` directory into your agent's skills folder. Keep its `references/` directory with `SKILL.md`.
 
-## What's inside
-
-Title formulas distilled from ~2000 publicly high-signal articles:
-
-- Colon subtitles
-- How-to openers
-- Numbered listicles
-- Year freshness markers
-- Guide/checklist authority frames
-- Question, comparison, and definition shapes
-
-Includes a short generation workflow, anti-patterns, and fill-in templates.
-
-**Note:** Real third-party Google Search Console click counts are not publicly available. These are structural patterns that correlate with popular posts, not a traffic guarantee.
+Invoke it as `$title-skill`.
 
 ## License
 
-MIT
+MIT. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for incorporated open-source material.
