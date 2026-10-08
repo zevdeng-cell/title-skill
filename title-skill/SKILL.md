@@ -5,7 +5,7 @@ description: Generate, diagnose, compare, and review attention-grabbing Chinese 
 
 # Title Skill
 
-Find the most clickable interpretation of the content, then rewrite it for the reader state and publishing format. Default to attention-first titles with curiosity, conflict, emotional stakes, sharp judgments, and selective revelation. A title may dramatize a true idea; it may not invent a checkable fact.
+Match the content promise to the user's goal, reader state, and publishing format. When no goal is specified, default to attention-first titles with curiosity, conflict, emotional stakes, sharp judgments, and selective revelation. A title may dramatize a true idea; it may not invent a checkable fact.
 
 ## Route the Task
 
@@ -16,6 +16,8 @@ Find the most clickable interpretation of the content, then rewrite it for the r
 | Several title candidates plus a request to choose | Compare |
 | Titles paired with performance data | Review |
 
+Treat the user's requested language, count, length, tone, and explanation level as constraints; mode defaults apply only when unspecified. If the mode is Review, follow the review reference and skip title drafting unless revisions are requested.
+
 Then identify the publishing format. Read [references/platforms.md](references/platforms.md) for WeChat, Xiaohongshu, X, Douyin, Channels, or a multi-platform matrix. Read [references/blog-formulas.md](references/blog-formulas.md) for blog, article, explainer, tutorial, comparison, or search-oriented titles. Read [references/evidence-and-review.md](references/evidence-and-review.md) in Review mode.
 
 Read [references/attention-hooks.md](references/attention-hooks.md) whenever the user wants stronger, more sensational, provocative, viral, clickbait-style, or curiosity-driven titles.
@@ -24,17 +26,21 @@ X short posts do not have a title field; deliver the first line. X articles do. 
 
 ## Shared Workflow
 
+Use this workflow for Generate and Diagnose, and as a check for Compare. Review follows its reference instead.
+
 ### 1. Extract the Promise
 
 Identify:
 
 - subject and intended reader
-- desired reaction: click, save, trust, comment, or conversion
-- at least three possible tensions from a fact, reversal, cost, conflict, meaningful number, or reader stake
+- primary goal: clicks, search relevance, saves, trust, comments, or conversion; use the user's stated goal and default to clicks only when none is given
+- possible tensions from a fact, reversal, cost, conflict, meaningful number, or reader stake; do not force three when the material supports fewer
 - one or two concrete actions or scenes
 - the conditions that limit the conclusion
 
-Choose the tension with the strongest click pull. Turn implications into stakes, expose the cost of ignoring the issue, and foreground the most surprising or uncomfortable interpretation. If the material is only a feature list, use contrast, consequence, reader anxiety, or a provocative question before falling back to a neutral functional title.
+Choose the angle that serves the primary goal. For SEO, foreground the query, audience, and useful answer; for trust or conversion, foreground a credible benefit or decision. For attention-first requests, choose the tension with the strongest click pull: turn implications into stakes, expose the cost of ignoring the issue, and foreground the most surprising or uncomfortable interpretation. In this attention-first mode, if the material is only a feature list, use contrast, consequence, reader anxiety, or a provocative question before falling back to a neutral functional title.
+
+If only a topic is supplied, draft topic-level angles without implying evidence, experience, or deliverables. If the requested promise needs an unknown result or fact, ask one targeted question or offer a supported alternative rather than inventing it.
 
 ### 2. Choose a Formula or Angle
 
@@ -42,7 +48,7 @@ Select one primary formula for a focused request, or several meaningfully differ
 
 ### 3. Draft Distinct Candidates
 
-For a light request, return 4-8 distinct candidates. Do not swap synonyms inside one repeated structure.
+For a light Generate request with no specified count, return 4-8 distinct candidates. Do not swap synonyms inside one repeated structure.
 
 When the user requests a complete matrix, draft three intensity levels:
 
@@ -62,11 +68,11 @@ The Max level may simplify nuance, withhold the answer, use emotionally loaded l
 4. **Compliance:** remove only claims that create a concrete legal, safety, or platform-policy risk. Do not flatten ordinary editorial exaggeration merely because it is dramatic.
 5. **Payoff:** the article must ultimately address the central tension, but the title may leave a large curiosity gap and need not reveal the answer early.
 
-Rank with this order:
+For attention-first requests, rank supported candidates with this order:
 
 > click pull > tension and curiosity > emotional stakes > specificity > literal completeness
 
-Give reasons, not numerical scores or guaranteed uplift.
+For SEO, rank search intent and clear topic/audience fit before curiosity. For trust or conversion, rank credible promise and reader relevance before intensity. Give reasons when requested or allowed, not numerical scores or guaranteed uplift.
 
 ## Diagnose
 
@@ -80,16 +86,20 @@ Compare candidates only when they target the same publishing format and body pro
 
 ## Output
 
-For a focused request, return:
+User-specified output takes precedence: if asked for one title only, return exactly one title with no labels, formula ID, or explanation.
+
+For Generate with no specified output format, return:
 
 1. the content promise or search intent in one sentence
 2. the chosen formula ID or angle
 3. 4-8 candidates
 4. one recommendation with a concise reason
 
+For Diagnose, lead with revisions and then the main failure; for Compare, lead with the winning existing candidate and the decisive reason; for Review, lead with the evidence-supported conclusion, comparable metrics, and missing data or next check. Do not add title candidates to Review unless requested.
+
 For a multi-platform request, group output by publishing format. Use a different angle for each format instead of shortening one master title.
 
-Keep extraction, discarded drafts, and checks internal unless the user asks for the reasoning.
+Keep detailed extraction, discarded drafts, and checks internal unless the user asks for the reasoning.
 
 ## Hard Boundaries
 
@@ -97,6 +107,7 @@ Keep extraction, discarded drafts, and checks internal unless the user asks for 
 - “I tested” requires the author's own operation and result record.
 - “Guide,” “template,” “checklist,” “source code,” and “copyable prompt” require the named deliverable.
 - A single benchmark or task may support a provocative opinion, but not a fabricated claim that other tests occurred.
+- Preserve the scope of actions and results: switching to reviewed documents is not deleting old policies, and one trial is not proof of a universal result. Dramatic framing must not change what happened.
 - A year marker requires substantive updating.
 - Do not turn historical correlation or writing experience into a platform algorithm rule.
 - Do not call low performance a title failure before restoring a comparable baseline.
